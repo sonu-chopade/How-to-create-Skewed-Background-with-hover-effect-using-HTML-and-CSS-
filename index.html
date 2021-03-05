@@ -1,0 +1,55 @@
+<!DOCTYPE html> 
+<html> 
+
+<head> 
+	<meta> 
+	<title> 
+		Skewed Background using HTML and CSS 
+	</title> 
+</head> 
+<style> 
+	body { 
+		margin: 0; 
+		padding: 0; 
+		font-family: serif; 
+	} 
+	
+	section:hover { 
+		background-image: linear-gradient(to left, red , pink); 
+		transition-time: 5s; 
+	} 
+	section { 
+		display: flex; 
+		background: red; 
+		height: 350px; 
+		justify-content: center; 
+		align-items: center; 
+		transform: skew(0deg, -10deg) translateY(-120px); 
+	} 
+	
+	.content { 
+		margin: 0; 
+		padding: 0; 
+		position: relative; 
+		max-width: 900px; 
+		transform: skew(0deg, 10deg); 
+		text-align: center; 
+	} 
+	
+	.content h2 { 
+		color: #fff; 
+		font-size: 80px; 
+	} 
+</style> 
+
+<body> 
+	<section> 
+		<div class="content"> 
+			<h2>CREATED BY NANDU CHOPADE</h2> 
+		</div> 
+	</section> 
+
+</body> 
+
+</html> 
+
